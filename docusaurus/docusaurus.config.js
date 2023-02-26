@@ -67,7 +67,8 @@ const config = {
         editUrl: 'https://github.com/fleetcommand-academy/web-frontend/docusaurus',
         sidebarPath: require.resolve('./sidebarsContribute.js'),
       }
-    ]
+    ],
+    './widgetbot',
   ],
 
   themeConfig:
@@ -114,11 +115,11 @@ const config = {
             label: 'Contribute',
             activeBasePath: 'contribute'
           },
-          {
-            to: '/blog', 
-            label: 'Blog', 
-            position: 'left'
-          },
+          // {
+          //   to: '/blog', 
+          //   label: 'Blog', 
+          //   position: 'left'
+          // },
         ],
       },
       footer: {
