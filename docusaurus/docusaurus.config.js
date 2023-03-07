@@ -96,8 +96,8 @@ const config = {
       announcementBar: {
         id: 'announcement',
         content: 
-          'Help grow the knowledge shared on this platform! Learn more about <a href="/contribute" target="_blank">contributing!</a>.',
-        backgroundColor: "#878787",
+          'Help grow the knowledge shared on this platform! Learn more about <a href="/contribute" target="_blank">contributing</a>!',
+        backgroundColor: "#c8aa36",
         textColor: "ffffff",
         isCloseable: false,
       },
