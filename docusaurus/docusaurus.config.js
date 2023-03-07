@@ -43,6 +43,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:'https://github.com/fleetcommand-academy/web-frontend/docusaurus/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true
         },
         blog: {
           showReadingTime: true,
@@ -94,10 +96,10 @@ const config = {
       announcementBar: {
         id: 'announcement',
         content: 
-          'Help grow the knowledge shared on this platform! Learn more about <a href="/contribute">contributing!</a>.',
-        backgroundColor: "115fff",
+          'Help grow the knowledge shared on this platform! Learn more about <a href="/contribute" target="_blank">contributing!</a>.',
+        backgroundColor: "#878787",
         textColor: "ffffff",
-        isCloseable: true,
+        isCloseable: false,
       },
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
