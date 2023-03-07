@@ -70,6 +70,23 @@ const config = {
     ],
     './widgetbot',
   ],
+  
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        indexDocs: true,
+        indexPages: true,
+        indexBlog: true,
+        docsRouteBasePath: "/",
+        blogRouteBasePath: "/",
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+        hashed: true,
+      })
+    ]
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -77,7 +94,7 @@ const config = {
       announcementBar: {
         id: 'announcement',
         content: 
-          'Help grow the knowledge shared on this platform! Learn more about <contributing>.',
+          'Help grow the knowledge shared on this platform! Learn more about <a href="/contribute">contributing!</a>.',
         backgroundColor: "115fff",
         textColor: "ffffff",
         isCloseable: true,
@@ -115,11 +132,11 @@ const config = {
             label: 'Contribute',
             activeBasePath: 'contribute'
           },
-          // {
-          //   to: '/blog', 
-          //   label: 'Blog', 
-          //   position: 'left'
-          // },
+          {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left'
+          },
         ],
       },
       footer: {
@@ -144,6 +161,10 @@ const config = {
                 label: 'Resources',
                 to: 'reference/Resources',
               },
+              {
+                label: 'Blog',
+                to: '/blog'
+              }
             ],
           },
           {
@@ -162,10 +183,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'Contribute',
                 to: '/contribute',
