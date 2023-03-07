@@ -49,7 +49,9 @@ export default function DocItemLayout({children}) {
           </article>
           <DocItemPaginator />
           <br/>
-          {(frontMatter.discordChannel) && (<WidgetBotComments discordChannel={frontMatter.discordChannel} width="1000"/>)}
+          {(frontMatter.discordChannel) && (
+            <WidgetBotComments discordChannel={frontMatter.discordChannel} width="1000"/>
+          )}
         </div>
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}

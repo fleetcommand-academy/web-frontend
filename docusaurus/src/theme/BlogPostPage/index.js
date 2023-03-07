@@ -35,7 +35,9 @@ function BlogPostPageContent({sidebar, children}) {
         <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />
       )}
       <br/>
-      {(frontMatter.discordChannel) && (<WidgetBotComments discordChannel={frontMatter.discordChannel} width="750"/>)}
+      {(frontMatter.discordChannel) && (
+        <WidgetBotComments discordChannel={frontMatter.discordChannel} width="750"/>
+      )}
     </BlogLayout>
   );
 }
